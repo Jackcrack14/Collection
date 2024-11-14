@@ -1,0 +1,45 @@
+/* Header Container */
+.header {
+  display: flex;
+  justify-content: space-between; /* Align elements to opposite sides */
+  align-items: center;
+  margin: 20px 0px;
+}
+
+/* Title in header */
+.header h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Subtitle in header */
+.header h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Input field style */
+.header .ant-input {
+  width: 250px; /* Adjust the width based on design */
+  margin-left: 10px; /* Spacing from other elements */
+}
+.header-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.collection-subtitle {
+  color: #717247;
+}
+.header-btn {
+  border-radius: 25px;
+}
+.save {
+  background: #e51058;
+  color: white !important;
+}
+.save:hover {
+  background: #e51058 !important;
+  color: white !important;
+  border-color: transparent !important;
+}

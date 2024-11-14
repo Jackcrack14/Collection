@@ -1,0 +1,70 @@
+/* Filter-Sort Component */
+.filter-sort-component {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between; /* Space between filters and content */
+  align-items: center;
+}
+
+/* Styling for filter buttons */
+.filter-button {
+  margin-right: 10px;
+  border-radius: 25px;
+  margin-left: 10px;
+}
+
+.filter-button.active {
+  background-color: #e51058;
+  color: white;
+}
+
+.filter-button:hover {
+  border-color: #e51058 !important;
+  color: black !important;
+}
+/* Styling for upload button */
+.upload-button {
+  border: 2px dashed #dbdbdb; /* Dotted border */
+  color: black;
+  padding: 0 20px; /* Horizontal padding */
+  background-color: transparent;
+  border-radius: 999px; /* Large enough for a pill shape */
+  display: inline-flex; /* Ensures content stays inline */
+  align-items: center; /* Vertically center the icon and text */
+  min-width: 120px; /* Initial width */
+  height: 40px; /* Fixed height */
+  transition: all 0.3s ease; /* Smooth transition for width and padding */
+  overflow: hidden; /* Prevent content overflow */
+  white-space: nowrap; /* Prevent text from breaking into multiple lines */
+}
+
+/* Extra text (hidden initially) */
+.upload-button .extra-text {
+  display: none; /* Initially hide extra text */
+  opacity: 0; /* Make text transparent */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for text reveal */
+  color: #e51058; /* Custom text color */
+  margin-left: 10px; /* Space between the icon and the extra text */
+}
+
+/* Icon inside the upload button */
+.upload-button .upload-icon {
+  width: 16px; /* Icon size */
+  height: 16px;
+}
+
+/* Button hover effect */
+.upload-button:hover {
+  min-width: 200px; /* Expand width on hover */
+  padding-left: 20px; /* Add padding to the left to create space for text */
+  border-color: #dbdbdb !important; /* Maintain border color */
+  border-radius: 25px !important; /* Ensure a pill shape on hover */
+}
+
+/* Extra text becomes visible when hovering */
+.upload-button:hover .extra-text {
+  display: inline-block; /* Show the text */
+  opacity: 1; /* Fade in the text */
+  transform: translateX(0); /* Optional: Slide in the text */
+  padding-right: 10px;
+}

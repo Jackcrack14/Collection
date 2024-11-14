@@ -1,0 +1,107 @@
+/* Reset margin and padding for the body */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Optional: You can change the font */
+}
+
+/* App container: Flexbox layout */
+.app-container {
+  display: flex;
+  flex-direction: row; /* Allow side-by-side layout for sidebar and content */
+}
+
+/* Main content area */
+
+/* Header layout: Ensure it spans the full width of the content */
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Left for title and right for search */
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Title and Subtitle styling */
+.header-container h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header-container h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.header-container .ant-input {
+  width: 250px; /* Adjust based on your design */
+  margin-left: 10px; /* Space between input and other elements */
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #efefef;
+
+  position: fixed;
+  height: 100vh; /* Full screen height */
+  width: 250px; /* Sidebar width */
+  padding-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.sidebar-menu {
+  background-color: #efefef;
+}
+
+/* Sidebar Menu Items */
+.sidebar-menu .ant-menu-item {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+/* Active state for sidebar items */
+
+/* Sidebar Menu Icons */
+.sidebar-menu .ant-menu-item .anticon {
+  font-size: 20px;
+}
+.sidebar-icon {
+  color: #717274;
+  width: 24px;
+  height: 24px;
+}
+
+/* Adjust margins and padding for layout */
+.card-row {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.card-container {
+  width: 100%;
+  min-height: 300px;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Space between cards */
+}
+
+.card-row .ant-col {
+  padding: 10px;
+}
+.ant-menu-item:hover {
+  background: transparent !important; /* Remove background on hover */
+}
+.ant-menu-item-selected {
+  background: transparent !important; /* Remove background on hover */
+}
